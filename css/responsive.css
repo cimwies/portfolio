@@ -1,0 +1,77 @@
+@media screen and (min-width: 10px) {
+ .nav {
+   z-index: 10;
+   background-color: #fff;
+   width: 300px;
+   position: absolute;
+   /* This trasform moves the drawer off canvas. */
+   -webkit-transform: translate(-999px, 0);
+   transform: translate(-999px, 0);
+   /* Optionally, we animate the drawer. */
+   transition: transform 0.3s ease;
+ }
+ .nav.open {
+   -webkit-transform: translate(0, 0);
+   transform: translate(0, 0);
+ }
+ .nav_item {
+   display: list-item;
+   border-bottom: 1px solid #E0E0E0;
+   width: 100%;
+   text-align: left;
+ }
+}
+
+
+@media screen and (min-width: 551px) {
+
+  .footer a {
+    padding: 0 0.5rem;
+  }
+
+  .title {
+    padding-right: 2.25rem;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+
+  .wrapper {
+      display: grid;
+      width: 100%;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px;
+      grid-template-areas:
+          "header header header"
+           "hero hero hero"
+           "featured_work featured_work featured_work"
+           "work1 work2 work3";
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: stretch;
+  }
+
+.footer {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    display: grid;
+    width: 100%;
+    margin-top: 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-areas:
+         "footer-nav-left footer-nav-right";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    }
+
+.footer-nav-left {
+    padding-bottom: 0;
+    justify-content: flex-start;
+  }
+
+.footer-nav-right {
+    justify-content: flex-end;
+  }
+
+}

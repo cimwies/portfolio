@@ -1,0 +1,285 @@
+/* Browser Reset */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* TYPO - Font Settings */
+
+body {
+  font: 16px/1.23 Roboto, sans-serif;
+  color: #333;
+  background-color: #edeeef;
+
+  margin-left: auto;
+	margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #888;
+  font-weight: 300;
+}
+
+h1,
+h1 a {
+  color: #333;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
+
+/* Link settings */
+
+a {
+  text-decoration: none;
+  color: #888;
+}
+
+a .work-preview-header {
+  color: #888;
+}
+
+.footer a {
+  color: #888;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+
+/* Paragraph Settings */
+
+.site-description {
+  color: #7d97ad;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/*
+ *
+ * Top Level Navigation - goal: visible only click on hamburger menu only
+ *
+ */
+
+ .nav {
+   z-index: 10;
+   background-color: #fff;
+   width: 300px;
+   position: absolute;
+   /* This trasform moves the drawer off canvas. */
+   -webkit-transform: translate(-300px, 0);
+   transform: translate(-300px, 0);
+   /* Optionally, we animate the drawer. */
+   transition: transform 0.3s ease;
+ }
+ .nav.open {
+   -webkit-transform: translate(0, 0);
+   transform: translate(0, 0);
+ }
+ .nav_item {
+   display: list-item;
+   border-bottom: 1px solid #7d97ad;
+   width: 100%;
+   text-align: left;
+ }
+
+
+/* LAYOUT - Grid Content*/
+
+.box { padding: 0.5rem;}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-areas:
+        "header"
+         "hero"
+         "featured_work"
+         "work1"
+         "work2"
+         "work3";
+      grid-template-columns: 1fr;
+  }
+
+.header {
+  grid-area: header;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.featured_work {
+  grid-area: featured_work;
+}
+
+.work1 {
+  grid-area: work1;
+}
+
+.work2 {
+  grid-area: work2;
+}
+
+.work3 {
+  grid-area: work3;
+}
+
+
+/* LAYOUT - Header Content Details */
+
+.header {
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 2;
+}
+
+.title {
+  padding-right: 0.75rem;
+  display: flex;
+  flex-grow: 3;
+  flex: 0 1 auto;
+}
+
+img.site_logo {
+  width: 54px;
+  height: 54px;
+}
+
+.site_title_content {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.site-description {
+  color: #7d97ad;
+  text-transform: uppercase;
+  margin: 0;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.top-menu {
+  display: flex;
+  flex-grow: 2;
+  flex: 0 1 auto;
+}
+
+.header_menu {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+
+.header_menu:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0.25em;
+  width: 1.25em;
+  height: 0.15em;
+  background: #333;
+  box-shadow:
+    0 0.82em 0 0 #333,
+    0 1.64em 0 0 #333;
+}
+
+/* LAYOUT - Content Details */
+
+.box img {
+  max-width: 100%;
+}
+
+
+/* LAYOUT - Footer Area */
+
+.footer {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    display: grid;
+    width: 100%;
+    margin-top: 20px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-areas:
+        "footer-nav-left"
+        "footer-nav-right";
+    grid-template-columns: 1fr;
+}
+
+.footer-nav-left {
+    padding-bottom: 1.25rem;
+    grid-area: footer-nav-left;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.footer-nav-right {
+    grid-area: footer-nav-right;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav-left a,  {
+   display: flex;
+}
+
+.footer-nav-right a {
+   display: flex;
+}
