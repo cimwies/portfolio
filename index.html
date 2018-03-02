@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Build a portfolio site :: by Claudia</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Claudia">
+	<meta name="description" content="An Udacity Google Front End Webdeveloper project of CSS-based design using the css grid system.">
+
+	<link rel="stylesheet" media="screen" href="css/main.css">
+	<link rel="stylesheet" media="screen" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="box wrapper">
+
+	<header class="header">
+	      <div class="logo">
+					<a href="/#">
+	        	<img class="site_logo" src="img/logo.svg" alt="Webdeveloper Ninja">
+					</a>
+				</div>
+
+				<div class="title">
+					<div class="site_title_content">
+		        <h1 class="site_title">
+		        	<a href="#/" rel="home">Jane Doette</a>
+		        </h1>
+						<p class="site-description">Front-End Ninja</p>
+					</div>
+				</div>
+
+				<div class="top-menu">
+	        <a id="menu" class="header_menu border-menu">
+					</a>
+			</div>
+				<nav id="drawer" class="nav">
+		      <ul class="nav_list">
+		        <li class="nav_item"><a href="#">Work</a></li>
+		        <li class="nav_item"><a href="#">Colophon</a></li>
+		        <li class="nav_item"><a href="#">Culture</a></li>
+		        <li class="nav_item"><a href="#">Blog</a></li>
+		      </ul>
+		    </nav>
+  </header>
+
+	<section class="hero">
+    <article class="description">
+        <h2>Actual work</h2>
+				<img srcset="https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509" alt="ad">
+	      <p>No Lore Ipsum textOrganic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</p>
+    </article>
+  </section>
+
+	<section class="featured_work">
+		<article>
+			<h2>Featured Work</h2>
+		</article>
+	</section>
+
+	<section class="work1">
+		<a class="work-preview" href="/work">
+			<picture class="work-preview-image">
+				<source srcset="https://placekitten.com/280/250" media="(min-width: 1024px)">
+				<source srcset="https://placekitten.com/320/220" media="(min-width: 600px)">
+
+				<img srcset="https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509" alt="ad">
+			</picture>
+			<div class="work-preview-content">
+				<h3 class="work-preview-header">Appify</h3>
+				<a class="work-preview-link" href="/work">Appify</a>
+			</div>
+		</a>
+	</section>
+
+	<section class="work2">
+			<a class="work-preview" href="/work">
+				<picture class="work-preview-image">
+					<source srcset="https://placekitten.com/280/250" media="(min-width: 1024px)">
+					<source srcset="https://placekitten.com/320/220" media="(min-width: 600px)">
+
+					<img srcset="https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509" alt="ad">
+				</picture>
+				<div class="work-preview-content">
+					<h3 class="work-preview-header">Appify</h3>
+					<a class="work-preview-link" href="/work">Appify</a>
+				</div>
+			</a>
+	</section>
+
+	<section class="work3">
+		<a class="work-preview" href="/work">
+			<picture class="work-preview-image">
+				<source srcset="https://placekitten.com/280/250" media="(min-width: 1024px)">
+				<source srcset="https://placekitten.com/320/220" media="(min-width: 600px)">
+
+				<img srcset="https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509" alt="ad">
+			</picture>
+			<div class="work-preview-content">
+				<h3 class="work-preview-header">Appify</h3>
+				<a class="work-preview-link" href="/work">Appify</a>
+			</div>
+		</a>
+	</section>
+</div>
+
+	<footer class="box footer">
+				  <ul class="footer-nav-left">
+	          <li><a href="home">Project Built a portfolio © 2018 by Claudia</a></li>
+	          <li><a href="colophon" title="colophon">Colophon</a></li>
+	          <li><a target="_blank" href="https://www.vecteezy.com">Butterfly by: www.Vecteezy.com</a></li>
+	        </ul>
+
+					<ul class="footer-nav-right">
+	          <li><a href="facebook" title="facebook">Facebook</a></li>
+	          <li><a href="linkedIn" title="linkedIn">LinkedIn</a></li>
+	          <li><a href="Xing" title="Xing">Xing</a></li>
+	      	</ul>
+  </footer>
+
+
+<script>
+	/*
+	 * Open the drawer when the menu ison is clicked.
+	 */
+	let menu = document.querySelector('#menu');
+	let main = document.querySelector('.wrapper');
+	let drawer = document.querySelector('.nav');
+
+	menu.addEventListener('click', function(e) {
+		drawer.classList.toggle('open');
+		e.stopPropagation();
+	});
+	main.addEventListener('click', function() {
+		drawer.classList.remove('open');
+	});
+
+</script>
+
+</body>
+</html>
