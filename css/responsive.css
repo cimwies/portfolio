@@ -1,8 +1,8 @@
 @media screen and (min-width: 10px) {
 
-   
-   /* right now I don't want to see the navigation by default */
-   
+
+/* right now I don't want to see the navigation by default */
+
    .nav {
      z-index: 10;
      background-color: #706fd3;
@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 640px) {
 
-   
+
 /* TYPO - Font Settings */
 
     h3 {
@@ -114,7 +114,7 @@
 @media screen and (min-width: 800px) {
 
 
-/* TYPO - Font Settings */
+/* TYPO - Font Settings & Hover effects */
 
    .hero h2 {
      padding-bottom: 1rem;
@@ -123,7 +123,20 @@
    h3 {
      font-size: 1.4rem;
    }
-   
+
+  picture,
+   .work1,
+   .work2,
+   .work3 {
+     transition: all .5s ease;
+   }
+
+   .work1:hover,
+   .work2:hover,
+   .work3:hover {
+     box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
+   }
+
 
 /* LAYOUT  */
 
@@ -138,12 +151,6 @@
 
    .work_preview_content {
      padding: 1rem 2rem;
-   }
-
-   .work1:hover,
-   .work2:hover,
-   .work3:hover {
-     box-shadow: 5px 5px 25px 0 rgba(46,61,73,0.2);
    }
 
    .footer {
