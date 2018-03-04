@@ -202,34 +202,15 @@ picture:hover {
   padding-bottom: 0.5rem;
   display: flex;
   align-items; flex-start;
-
-    /* HEADER RIGHT ALIGNMENT
-    align-items: center;
-    */
-
 }
 
 .logo {
   padding-right: 1rem;
-  /* HEADER RIGHT ALIGNMENT
-  display: flex;
-  flex-grow: 1;
-  flex-grow: 2;
-  */
-
 }
 
 .title {
-
   display: flex;
   flex-grow: 5;
-
-  /* HEADER RIGHT ALIGNMENT
-  padding-right: 0.75rem;
-  flex-grow: 3;
-  flex: 0 1 auto;
-  */
-
 }
 
 img.site_logo {
@@ -240,21 +221,10 @@ img.site_logo {
 .site_title_content {
   flex-direction: column;
   justify-content: flex-start;
-
-  /* HEADER RIGHT ALIGNMENT
-  justify-content: flex-end;
-  */
-
 }
 
 .site_description {
   margin: 0;
-
-  /* HEADER RIGHT ALIGNMENT
-  align-self: flex-end;
-  text-align: right;
-  */
-
 }
 
 .top_menu {
@@ -266,10 +236,6 @@ img.site_logo {
 .header_menu {
   position: relative;
   width: 35px;
-  /*
-  width: 54px;
-  height: 54px;
-  */
   cursor: pointer;
 }
 
@@ -278,19 +244,12 @@ img.site_logo {
   position: absolute;
   right: 0;
   top: 1.225em;
-  /*
-  top: 0.25em;
-  */
   width: 1.25em;
   height: 0.15em;
   background: #333;
   box-shadow:
     0 0.25em 0 0 #333,
     0 0.5em 0 0 #333;
-  /*
-    0 0.82em 0 0 #909090,
-    0 1.64em 0 0 #909090;
-  */
 }
 
 /* LAYOUT - Content Details */
