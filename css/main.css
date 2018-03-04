@@ -99,7 +99,7 @@ a {
 }
 
 a:hover {
-  color: #706fd3;
+  color: #333;
 }
 
 a .work_preview_header {
@@ -130,6 +130,14 @@ picture:hover {
   color: #909090;
   font-size: 0.8125rem;
   padding-left: 0.25rem;
+}
+
+.learn_more {
+  color: #909090;
+  font-size: 0.6125rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .credit_item {
