@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Build a portfolio site :: Picture Credits</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Claudia">
+	<meta name="description" content="An Udacity Google Front End Webdeveloper project of CSS-based design using the css grid system.">
+
+	<link rel="stylesheet" media="screen" href="css/main.css">
+	<link rel="stylesheet" media="screen" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,600" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="box wrapper">
+
+		<header class="header">
+	  		<div class="logo">
+						<a href="index.html">
+	        			<img class="site_logo" src="img/logo.svg" alt="Webdeveloper Ninja">
+						</a>
+				</div>
+
+				<div class="title">
+						<div class="site_title_content">
+		      		  <h1 class="site_title">
+		        			<a href="index.html" rel="home">Jane Doette</a>
+		        		</h1>
+								<p class="site_description">Front-End Ninja</p>
+						</div>
+				</div>
+
+				<div class="top_menu">
+						<p>Menu</p>
+	       		<a id="menu" class="header_menu"></a>
+			  </div>
+
+				<nav id="drawer" class="nav">
+			      <ul class="nav_list">
+				        <li class="nav_item"><a href="index.html">Home</a></li>
+				        <li class="nav_item"><a href="work.html">Picture Credits</a></li>
+			      </ul>
+		    </nav>
+
+  		</header>
+
+		<section class="hero">
+  		  <article class="description">
+	  				<h2>Picture Credits</h2>
+						<p>All images are personal material, if not otherwise stated.</p>
+						<ul class="credit_list">
+							  <li class="credit_item"><a href="https://unsplash.com/photos/_yMciiStJyY" target="_blank">Picture Code: © Maik Jonietz - Unsplash</a></li>
+								<li class="credit_item"><a href="https://unsplash.com/photos/Yf1QDP03rCM" target="_blank">Picture Chameleon: © Himesh Kumar Behera - Unsplash</a></li>
+								<li class="credit_item"><a href="https://www.vecteezy.com" target="_blank">Icon Butterfly: © www.vecteezy.com</a></li>
+					   </ul>
+    		</article>
+  	</section>
+
+</div>
+
+<!-- DIV box wrapper closed -->
+
+<footer class="box footer">
+		<ul class="footer_nav_left">
+	      <li><a href="home">Project "Built a portfolio" © 2018 by Claudia</a></li>
+	  </ul>
+
+		<ul class="footer_nav_right">
+				<li><a href="index.html" title="not active facebook">Facebook</a></li>
+				<li><a href="index.html" title="not active linkedIn">LinkedIn</a></li>
+				<li><a href="index.html" title="not active Xing">Xing</a></li>
+		  </ul>
+</footer>
+
+
+<script>
+
+	/*
+	 * Open the drawer when the menu icon is clicked. Code from Udacity lesson
+	 */
+
+	let menu = document.querySelector('#menu');
+	let main = document.querySelector('.wrapper');
+	let drawer = document.querySelector('.nav');
+
+	menu.addEventListener('click', function(e) {
+		drawer.classList.toggle('open');
+		e.stopPropagation();
+	});
+	main.addEventListener('click', function() {
+		drawer.classList.remove('open');
+	});
+
+</script>
+
+</body>
+</html>
